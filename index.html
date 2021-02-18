@@ -9,6 +9,61 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 	<title>Next Movie</title>
+	<style type="text/css">
+		body {
+			background-color: #1a1d22;
+			padding-top: 12%;
+		}
+
+		li {
+			cursor: pointer;
+		}
+
+		li:hover {
+			background-color: #ecf0f1;
+		}
+
+		.next {
+			width: -webkit-fill-available;
+			background: #16a085;
+			color: white;
+		}
+
+		.next:hover {
+			background-color: #1abc9c;
+		}
+
+		.mn {
+			justify-content: center;
+		}
+
+		h3 {
+			margin-block-end: 0em !important;
+		}
+
+		.copy {
+			margin-left: 5px;
+		}
+
+		.copy:active {
+			background-color: #ecf0f1;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		jQuery(function($){
+			$('[data-toggle="tooltip"]').tooltip({
+				trigger: 'click'
+			});
+
+			$('[data-toggle="tooltip"]').on("mouseleave", function(){
+				$(this).tooltip("hide");
+			})
+		});
+
+	</script>
 </head>
 <body>
 	<div class="d-flex justify-content-center align-items-center">
@@ -42,7 +97,7 @@
 
 		</div>
 
-	    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 		<script type="text/javascript">
